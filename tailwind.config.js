@@ -5,7 +5,11 @@ module.exports = {
     fontFamily: {
       tenor: ["Tenor Sans", "sans - serif"],
     },
-    extend: {},
+    extend: {
+      screens: {
+        xs: "360px",
+      },
+    },
   },
   plugins: [],
 };

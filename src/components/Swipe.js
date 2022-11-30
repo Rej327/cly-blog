@@ -14,7 +14,7 @@ export default function Swipe() {
         slidesPerView={3}
         slidesPerGroup={1}
         loop={true}
-        // autoplay={{ delay: 2500, disableOnInteraction: false }}
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
         pagination={{
           clickable: true,
         }}
