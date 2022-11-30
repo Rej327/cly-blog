@@ -25,11 +25,13 @@ export default function Swipe() {
         <SwiperSlide>
           <img src={image1} alt="/" className="object-cover h-full" />
           <div className={styles.headerimage}>
-            <div className="my-96 px-8">
-              <p className="text-white text-2xl font-tenor py-2">
+            <div className="my-[80px] px-2 sm:my-96 sm:px-8">
+              <p className="text-white text-[18px] sm:text-2xl font-tenor py-2">
                 Write Website from Scratch
               </p>
-              <p className="py-2 text-gray-200">JULY 20, 2022 | WEB DESIGN</p>
+              <p className="text-[13px] sm:text-base py-2 text-gray-200">
+                JULY 20, 2022 | WEB DESIGN
+              </p>
             </div>
           </div>
         </SwiperSlide>
