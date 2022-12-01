@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import { slide1, slide2, slide3 } from "../assets";
 
-export default function slidepost() {
+export default function SlidePost() {
   return (
     <div className="h-full w-full">
       <Swiper
@@ -17,8 +17,7 @@ export default function slidepost() {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Pagination, Navigation, Autoplay]}
+        modules={[Pagination, Autoplay]}
         className="h-full"
       >
         <SwiperSlide>

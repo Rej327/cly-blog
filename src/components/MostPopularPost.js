@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  fashionist,
-  places,
-  slide1,
-  slide2,
-  slide3,
-  jeans,
-  food,
-} from "../assets";
+import { fashionist, places, jeans, food } from "../assets";
+import SlidePost from "./SlidePost";
 
 const MostPopularPost = () => {
   return (
@@ -43,7 +36,11 @@ const MostPopularPost = () => {
             </div>
           </div>
           <div className=" rounded-md bg-white h-[48rem] w-full">
-            <img src={places} alt="/" className="rounded-t-md" />
+            <img
+              src={places}
+              alt="/"
+              className="rounded-t-md hover:scale-105 duration-500"
+            />
             <div className="px-5 py-8 text-center">
               <h1 className="font-tenor text-2xl">
                 30 Places you want to visits
@@ -60,7 +57,24 @@ const MostPopularPost = () => {
               </button>
             </div>
           </div>
-          <div className="bg-red-600 h-[35rem] w-full"></div>
+          <div className=" rounded-md bg-white h-[38rem] w-full">
+            <div className="w-full h-80">
+              <SlidePost />
+            </div>
+            <div className="px-5 py-8 text-center">
+              <h1 className="font-tenor text-2xl">Slideshow post - Images</h1>
+              <p className="text-[12px] text-stone-400 tracking-widest my-5">
+                Feb 07, 2018 | Web Design
+              </p>
+              <p className="text-stone-500">
+                Separated they live in Bookmarksgrove right at the coast of the
+                Semantics, a large language ocean.
+              </p>
+              <button class="bg-[#E2B8AC] hover:bg-[#e0bbb0] text-white  my-5 py-2 px-4 rounded-full hover:drop-shadow-md duration-500 hover:scale-105">
+                Read More
+              </button>
+            </div>
+          </div>
           <div className="bg-red-600 h-[35rem] my-[-10rem] w-full"></div>
           <div className="bg-red-600 h-[45rem] w-full"></div>
           <div className="bg-red-600 h-[35rem] my-[-10rem] w-full"></div>
