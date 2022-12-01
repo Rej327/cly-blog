@@ -1,6 +1,7 @@
 import React from "react";
 import { fashionist, places, jeans, food } from "../assets";
 import SlidePost from "./SlidePost";
+import VideoPost from "./VideoPost";
 
 const MostPopularPost = () => {
   return (
@@ -75,9 +76,66 @@ const MostPopularPost = () => {
               </button>
             </div>
           </div>
-          <div className="bg-red-600 h-[35rem] my-[-10rem] w-full"></div>
-          <div className="bg-red-600 h-[45rem] w-full"></div>
-          <div className="bg-red-600 h-[35rem] my-[-10rem] w-full"></div>
+          <div className=" rounded-md bg-white h-[65rem] my-[-13rem] w-full">
+            <VideoPost />
+            <div className="px-5 py-8 text-center">
+              <h1 className="font-tenor text-2xl">
+                30 Places you want to visits
+              </h1>
+              <p className="text-[12px] text-stone-400 tracking-widest my-5">
+                Feb 07, 2018 | Web Design
+              </p>
+              <p className="text-stone-500">
+                Separated they live in Bookmarksgrove right at the coast of the
+                Semantics, a large language ocean.
+              </p>
+              <button class="bg-[#E2B8AC] hover:bg-[#e0bbb0] text-white  my-5 py-2 px-4 rounded-full hover:drop-shadow-md duration-500 hover:scale-105">
+                Read More
+              </button>
+            </div>
+          </div>
+          <div className=" rounded-md bg-white h-[35rem] w-full">
+            <img
+              src={jeans}
+              alt="/"
+              className="rounded-t-md hover:scale-105 duration-500"
+            />
+            <div className="px-5 py-8 text-center">
+              <h1 className="font-tenor text-2xl">
+                New Arrival Jeans Original For Fashion
+              </h1>
+              <p className="text-[12px] text-stone-400 tracking-widest my-5">
+                Feb 07, 2018 | Web Design
+              </p>
+              <p className="text-stone-500">
+                Separated they live in Bookmarksgrove right at the coast of the
+                Semantics, a large language ocean.
+              </p>
+              <button class="bg-[#E2B8AC] hover:bg-[#e0bbb0] text-white  my-5 py-2 px-4 rounded-full hover:drop-shadow-md duration-500 hover:scale-105">
+                Read More
+              </button>
+            </div>
+          </div>
+          <div className=" rounded-md bg-white h-[35rem] my-[-10rem] w-full">
+            <img
+              src={food}
+              alt="/"
+              className="rounded-t-md hover:scale-105 duration-500"
+            />
+            <div className="px-5 py-8 text-center">
+              <h1 className="font-tenor text-2xl">Food For Your Taste</h1>
+              <p className="text-[12px] text-stone-400 tracking-widest my-5">
+                Feb 07, 2018 | Web Design
+              </p>
+              <p className="text-stone-500">
+                Separated they live in Bookmarksgrove right at the coast of the
+                Semantics, a large language ocean.
+              </p>
+              <button class="bg-[#E2B8AC] hover:bg-[#e0bbb0] text-white  my-5 py-2 px-4 rounded-full hover:drop-shadow-md duration-500 hover:scale-105">
+                Read More
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
