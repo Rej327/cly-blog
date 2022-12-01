@@ -1,9 +1,13 @@
 import React from "react";
-import { Player } from "video-react";
+import ReactPlayer from "react-player";
 import { videopost } from "../assets";
 
 const VideoPost = () => {
-  return <Player playsInline poster="/assets/poster.png" src={videopost} />;
+  return (
+    <div>
+      <ReactPlayer src={videopost} />
+    </div>
+  );
 };
 
 export default VideoPost;
