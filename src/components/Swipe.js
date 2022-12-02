@@ -20,7 +20,20 @@ export default function Swipe() {
         }}
         navigation={true}
         modules={[Pagination, Navigation, Autoplay]}
-        className="h-full"
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+
+          768: {
+            slidesPerView: 2,
+          },
+
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
+        className="h-screen w-full sm:h-full"
       >
         <SwiperSlide>
           <img src={image1} alt="/" className="object-cover h-full" />

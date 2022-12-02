@@ -5,7 +5,7 @@ import { videopost } from "../assets";
 const VideoPost = () => {
   return (
     <div>
-      <ReactPlayer src={videopost} />
+      <video src={videopost} autoPlay="true" loop controls />
     </div>
   );
 };
