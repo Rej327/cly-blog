@@ -1,16 +1,19 @@
 import React from "react";
-import { fashionist, places, jeans, food } from "../assets";
 import SlidePost from "./SlidePost";
-import VideoPost from "./VideoPost";
 import { data } from "../data/data";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import { SwiperSlide } from "swiper/react";
 
-const MostPopularPost = ({ head, date, content, button }) => {
+import "aos/dist/aos.css";
+
+const MostPopularPost = () => {
   return (
     <div className="w-full h-full">
       <div className="w-[1160px] h-full mx-auto my-24 ">
-        <div className="text-center w-[600px] h-28 mx-auto">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="text-center w-[600px] h-28 mx-auto"
+        >
           <p className="text-[10px] text-stone-400 font-bold tracking-widest">
             MOST POPULAR POST
           </p>
@@ -22,7 +25,11 @@ const MostPopularPost = ({ head, date, content, button }) => {
           >
             <Masonry gutter="20px">
               {data.map((data) => (
-                <div className=" rounded-md bg-white w-full">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  className=" rounded-md bg-white w-full"
+                >
                   <img
                     src={data.img}
                     className="rounded-t-md hover:scale-105 duration-500"
