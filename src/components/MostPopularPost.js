@@ -4,6 +4,7 @@ import { data } from "../data/data";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 import "aos/dist/aos.css";
+import Qoutes from "./Qoutes";
 
 const MostPopularPost = () => {
   return (
@@ -41,13 +42,15 @@ const MostPopularPost = () => {
 
                   {data.component ? <SlidePost /> : undefined}
 
+                  {data.components ? <Qoutes /> : undefined}
+
                   <div className="px-5 py-8 text-center">
                     <h1 className="font-tenor text-2xl">{data.head}</h1>
                     <p className="text-[12px] text-stone-400 tracking-widest my-5">
                       {data.date}
                     </p>
                     <p className="text-stone-500">{data.content}</p>
-                    <button class="bg-[#E2B8AC] hover:bg-[#e0bbb0] text-white  my-5 py-2 px-4 rounded-full hover:drop-shadow-md duration-500 hover:scale-105">
+                    <button className="bg-[#E2B8AC] hover:bg-[#e0bbb0] text-white  my-5 py-2 px-4 rounded-full hover:drop-shadow-md duration-500 hover:scale-105">
                       {data.button}
                     </button>
                   </div>

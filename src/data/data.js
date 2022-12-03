@@ -1,4 +1,5 @@
 import { fashionist, places, jeans, food, videopost } from "../assets";
+import Qoutes from "../components/Qoutes";
 import SlidePost from "../components/SlidePost";
 
 export const data = [
@@ -56,6 +57,16 @@ export const data = [
     id: 6,
     img: food,
     head: "How to become a fashionist?",
+    date: "Feb 07, 2018 | Web Design",
+    content:
+      "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+    button: "Read More",
+  },
+
+  {
+    id: 7,
+    components: Qoutes,
+    head: "Random Qoutes",
     date: "Feb 07, 2018 | Web Design",
     content:
       "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
