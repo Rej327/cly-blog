@@ -4,8 +4,9 @@ import SlidePost from "./SlidePost";
 import VideoPost from "./VideoPost";
 import { data } from "../data/data";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { SwiperSlide } from "swiper/react";
 
-const MostPopularPost = () => {
+const MostPopularPost = ({ head, date, content, button }) => {
   return (
     <div className="w-full h-full">
       <div className="w-[1160px] h-full mx-auto my-24 ">
@@ -31,7 +32,7 @@ const MostPopularPost = () => {
                     <video src={data.video} autoPlay="true" loop controls />
                   ) : undefined}
 
-                  {}
+                  {data.component ? <SlidePost /> : undefined}
 
                   <div className="px-5 py-8 text-center">
                     <h1 className="font-tenor text-2xl">{data.head}</h1>

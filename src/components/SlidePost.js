@@ -8,7 +8,7 @@ import { slide1, slide2, slide3 } from "../assets";
 
 export default function SlidePost() {
   return (
-    <div className="h-full w-full">
+    <div>
       <Swiper
         slidesPerView={1}
         slidesPerGroup={1}
@@ -18,7 +18,7 @@ export default function SlidePost() {
           clickable: true,
         }}
         modules={[Pagination, Autoplay]}
-        className="h-full"
+        className="h-[full]"
       >
         <SwiperSlide>
           <img src={slide1} alt="/" className="object-cover h-full" />

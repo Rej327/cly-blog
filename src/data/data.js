@@ -24,7 +24,7 @@ export const data = [
 
   {
     id: 3,
-    comp: SlidePost,
+    component: SlidePost,
     head: "Slideshow post - Images",
     date: "Feb 07, 2018 | Web Design",
     content:
