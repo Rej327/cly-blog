@@ -4,7 +4,6 @@ import { AiOutlineReload } from "react-icons/ai";
 const Qoutes = () => {
   const [qoutes, setQoute] = useState([]);
   const [getQoutes, setGetQoutes] = useState(false);
-
   const fetchQoutes = async () => {
     const response = await fetch("https://type.fit/api/quotes");
     const data = await response.json();
@@ -16,8 +15,6 @@ const Qoutes = () => {
   const handleClick = () => {
     setGetQoutes(!getQoutes);
   };
-
-  console.log("text: ", qoutes.text, "\n", "author: ", qoutes.author);
 
   useEffect(() => {
     fetchQoutes();
