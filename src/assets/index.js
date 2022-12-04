@@ -11,3 +11,8 @@ export { default as slide3 } from "./slide3.jpg";
 export { default as jeans } from "./jeans.jpg";
 export { default as food } from "./food.jpg";
 export { default as videopost } from "./videopost.mp4";
+export { default as seperated } from "./seperated.jpg";
+export { default as barbeque } from "./barbeque.jpg";
+export { default as flight } from "./flight.jpg";
+export { default as music } from "./music.jpg";
+export { default as audiopost } from "./audiopost.mp3";

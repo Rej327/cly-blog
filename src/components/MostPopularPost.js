@@ -2,7 +2,6 @@ import React from "react";
 import SlidePost from "./SlidePost";
 import { data } from "../data/data";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-
 import "aos/dist/aos.css";
 import Qoutes from "./Qoutes";
 
@@ -31,10 +30,13 @@ const MostPopularPost = () => {
                   data-aos-duration="2000"
                   className=" rounded-md bg-white w-full"
                 >
-                  <img
-                    src={data.img}
-                    className="rounded-t-md hover:scale-105 duration-500"
-                  />
+                  {data.img ? (
+                    <img
+                      src={data.img}
+                      alt="/"
+                      className="rounded-t-md hover:scale-105 duration-500"
+                    />
+                  ) : undefined}
 
                   {data.video ? (
                     <video src={data.video} autoPlay="true" loop controls />
@@ -43,6 +45,16 @@ const MostPopularPost = () => {
                   {data.component ? <SlidePost /> : undefined}
 
                   {data.components ? <Qoutes /> : undefined}
+
+                  {data.audio ? (
+                    <audio
+                      className="mx-auto mt-5"
+                      src={data.audio}
+                      autoPlay="true"
+                      loop
+                      controls
+                    />
+                  ) : undefined}
 
                   <div className="px-5 py-8 text-center">
                     <h1 className="font-tenor text-2xl">{data.head}</h1>
