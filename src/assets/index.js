@@ -16,3 +16,4 @@ export { default as barbeque } from "./barbeque.jpg";
 export { default as flight } from "./flight.jpg";
 export { default as music } from "./music.jpg";
 export { default as audiopost } from "./audiopost.mp3";
+export { default as profile } from "./profile.jpg";
