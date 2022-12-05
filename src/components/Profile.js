@@ -5,7 +5,7 @@ import Newsletter from "./Newsletter";
 
 const Profile = () => {
   return (
-    <div className="grid grid-cols-3 gap-6 px-20">
+    <div className="grid grid-cols-3 gap-8 px-28">
       <AboutMe />
       <LatestBlog />
       <Newsletter />
