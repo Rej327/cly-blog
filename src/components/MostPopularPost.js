@@ -47,13 +47,7 @@ const MostPopularPost = () => {
                   {data.components ? <Qoutes /> : undefined}
 
                   {data.audio ? (
-                    <audio
-                      className="mx-auto mt-5"
-                      src={data.audio}
-                      autoPlay="true"
-                      loop
-                      controls
-                    />
+                    <audio className="mx-auto mt-5" src={data.audio} controls />
                   ) : undefined}
 
                   <div className="px-5 py-8 text-center">
