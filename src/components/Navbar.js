@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
 import { TfiClose } from "react-icons/tfi";
 import { Link } from "react-router-dom";
+import { profile } from "../assets";
 import { toggleStyle } from "../global-styles/globalstyles";
+import { navTextStyles } from "../global-styles/globalstyles";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -24,17 +26,38 @@ const Navbar = () => {
           onClick={handleNav}
           className="w-8 h-8 font-thin cursor-pointer mt-4 ml-auto hover:bg-[#E2B8AC] hover:text-white rounded-md p-1 duration-500"
         />
-        <ul className="mt-20">
+        <ul className="mt-8">
           <Link to="/">
-            <li>BLOG</li>
+            <li className={navTextStyles.li} onClick={handleNav}>
+              BLOG
+            </li>
           </Link>
           <Link to="/single-blog">
-            <li>SINGLE BLOG</li>
+            <li className={navTextStyles.li} onClick={handleNav}>
+              SINGLE BLOG
+            </li>
           </Link>
-          <li>ABOUT ME</li>
-          <li>CONTACT ME</li>
+          <li className={navTextStyles.li} onClick={handleNav}>
+            ABOUT ME
+          </li>
+          <li className={navTextStyles.li} onClick={handleNav}>
+            CONTACT ME
+          </li>
         </ul>
-        <div></div>
+        <div className="w-full h-full">
+          <h1 className="font-tenor mt-9 text-center tracking-wider">
+            ABOUT ME
+          </h1>
+          <img src={profile} alt="/" className="w-60 my-5 mx-auto" />
+          <div>
+            <h1 className="font-tenor tracking-wide text-lg py-3 text-center">
+              Carolyn Ollarte
+            </h1>
+            <p className="text-gray-600 text-center">
+              A small river named Duden flows by their place and supplies.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
