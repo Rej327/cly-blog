@@ -1,10 +1,10 @@
 import React from "react";
-import BlogContent from "../components/BlogContent";
+import AddBlog from "../components/AddBlog";
 
 const SingleBlog = () => {
   return (
     <div>
-      <BlogContent />
+      <AddBlog />
     </div>
   );
 };
