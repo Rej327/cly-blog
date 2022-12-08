@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { profile } from "../assets";
 import { toggleStyle } from "../global-styles/globalstyles";
 import { navTextStyles } from "../global-styles/globalstyles";
+import SocialIcons from "./SocialIcons";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -57,6 +58,7 @@ const Navbar = () => {
               A small river named Duden flows by their place and supplies.
             </p>
           </div>
+          <SocialIcons />
         </div>
       </div>
     </div>

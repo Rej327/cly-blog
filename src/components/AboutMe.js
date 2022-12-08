@@ -1,5 +1,6 @@
 import React from "react";
 import { profile } from "../assets";
+import SocialIcons from "./SocialIcons";
 
 const AboutMe = () => {
   return (
@@ -16,6 +17,7 @@ const AboutMe = () => {
           A small river named Duden flows by their place and supplies.
         </p>
       </div>
+      <SocialIcons />
     </div>
   );
 };
