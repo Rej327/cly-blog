@@ -5,7 +5,9 @@ const AddBlog = () => {
   return (
     <div className="max-full h-screen bg-[#E2B8AC]/50 flex justify-center">
       <div className="m-auto bg-white text-center w-96 h-auto inline-block rounded-md p-4">
-        <h1 className="pb-4 font-tenor tracking-wider text-2xl">ADD BLOG</h1>
+        <h1 className="pb-4 font-tenor tracking-wider text-2xl text-[#E2B8AC]">
+          ADD BLOG
+        </h1>
         <form className="grid">
           <label className="pb-2">TITLE</label>
           <input
@@ -22,7 +24,7 @@ const AddBlog = () => {
             required
           />
 
-          <input type="file" className="py-3" />
+          <input type="file" className="py-3 cursor-pointer w-52" />
         </form>
         <VscAdd className="h-10 p-2 mx-auto cursor-pointer mt-2 w-10 bg-[#E2B8AC] rounded-md hover:text-white hover:scale-105 hover:shadow-md duration-300" />
       </div>
