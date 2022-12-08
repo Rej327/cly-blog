@@ -5,7 +5,7 @@ export const styles = {
 
 export const toggleStyle = {
   NAVTOOGLE:
-    "z-[1000] fixed right-0 top-0 w-[25%] h-full border-r bg-white ease-in-out duration-500 p-4 hover:overflow-scroll duration-500",
+    "z-[1000] fixed right-0 top-0 w-[25%] h-full border-r bg-white ease-in-out duration-500 p-4 hover:overflow-scrol scrollbar scrollbar-thumb-[#E2B8AC]scrollbar-track-gray-100",
   NAVTOOGLEOUT:
     "z-[10000] ease-in-out duration-500 fixed right-[-100%] bg-black text-white rounde-md",
 };
