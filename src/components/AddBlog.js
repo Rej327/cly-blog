@@ -16,7 +16,7 @@ const AddBlog = () => {
           />
           <label className="p-4">CONTENT</label>
           <textarea
-            className="inline-block max-h-28 p-2 bg-slate-50 rounded-md outline-[#E2B8AC]"
+            className="inline-block h-28 p-2 bg-slate-50 rounded-md outline-[#E2B8AC]"
             type="text"
             placeholder="Enter you blog here..."
             required
