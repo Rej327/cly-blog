@@ -7,11 +7,11 @@ const AddBlog = () => {
   const [date, setDate] = useState("");
   const [content, setContent] = useState("");
   const [img, setImg] = useState("");
-  const [video, setVideo] = useState("");
-  const [audio, setAudio] = useState("");
+  // const [video, setVideo] = useState("");
+  // const [audio, setAudio] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    const data = { head, date, content, img, video, audio };
+    const data = { head, date, content, img };
     console.log(data);
   };
 
