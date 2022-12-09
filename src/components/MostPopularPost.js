@@ -53,6 +53,7 @@ const MostPopularPost = () => {
                   <div className="px-5 py-8 text-center">
                     <h1 className="font-tenor text-2xl">{data.head}</h1>
                     <p className="text-[12px] text-stone-400 tracking-widest my-5">
+                      Post: {""}
                       {data.date}
                     </p>
                     <p className="text-stone-500">{data.content}</p>
