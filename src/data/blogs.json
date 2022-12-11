@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img": "../assets/fashionist.jpg",
+    "img": "assets/fashionist.jpg",
     "head": "How to become a fashionist?",
     "date": "Feb 07, 2018 | Web Design",
     "content": "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
@@ -10,7 +10,7 @@
 
   {
     "id": 2,
-    "img": "../assets/places.jpg",
+    "img": "assets/places.jpg",
     "head": "30 Places you want to visits",
     "date": "Feb 07, 2018 | Web Design",
     "content": "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
@@ -28,7 +28,7 @@
 
   {
     "id": 4,
-    "video": "../assets/videopost.mp4",
+    "video": "assets/videopost.mp4",
     "head": "Video Post - Traveler",
     "date": "Feb 07, 2018 | Web Design",
     "content": "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
@@ -37,7 +37,7 @@
 
   {
     "id": 5,
-    "img": "../assets/jeans.jpg",
+    "img": "assets/jeans.jpg",
     "head": "Food For Your Taste",
     "date": "Feb 07, 2018 | Web Design",
     "content": "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
@@ -46,7 +46,7 @@
 
   {
     "id": 6,
-    "img": "../assets/food.jpg",
+    "img": "assets/food.jpg",
     "head": "How to become a fashionist?",
     "date": "Feb 07, 2018 | Web Design",
     "content": "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
@@ -64,7 +64,7 @@
 
   {
     "id": 8,
-    "img": "../assets/seperated.jpg",
+    "img": "assets/seperated.jpg",
     "head": "Separated they live in Bookmarksgrove",
     "date": "Feb 07, 2018 | Web Design",
     "content": "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
@@ -73,7 +73,7 @@
 
   {
     "id": 9,
-    "img": "../assets/barbeque.jpg",
+    "img": "assets/barbeque.jpg",
     "head": "Barbeque Grill",
     "date": "Feb 07, 2018 | Web Design",
     "content": "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
@@ -82,7 +82,7 @@
 
   {
     "id": 10,
-    "img": "../assets/flight.jpg",
+    "img": "assets/flight.jpg",
     "head": "Flight",
     "date": "Feb 07, 2018 | Web Design",
     "content": "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
@@ -91,7 +91,7 @@
 
   {
     "id": 11,
-    "audio": "../assets/audiopost.mp3",
+    "audio": "assets/audiopost.mp3",
     "head": "Audio - Run",
     "date": "Feb 07, 2018 | Web Design",
     "content": "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
@@ -100,7 +100,7 @@
 
   {
     "id": 12,
-    "img": "../assets/music.jpg",
+    "img": "assets/music.jpg",
     "head": "Music- Guitar",
     "date": "Feb 07, 2018 | Web Design",
     "content": "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",

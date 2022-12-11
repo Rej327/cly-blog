@@ -1,6 +1,5 @@
 import React from "react";
 import SlidePost from "./SlidePost";
-import { data } from "../data/data";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import "aos/dist/aos.css";
 import Qoutes from "./Qoutes";
@@ -48,7 +47,11 @@ const MostPopularPost = () => {
                   {blogs.components ? <Qoutes /> : undefined}
 
                   {blogs.audio ? (
-                    <audio className="mx-auto mt-5" src={data.audio} controls />
+                    <audio
+                      className="mx-auto mt-5"
+                      src={blogs.audio}
+                      controls
+                    />
                   ) : undefined}
 
                   <div className="px-5 py-8 text-center">
