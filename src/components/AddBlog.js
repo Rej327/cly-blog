@@ -9,7 +9,16 @@ const AddBlog = () => {
   const [img, setImg] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    const data = { head, date, content, img };
+
+    const blogs = { head, date, content, img };
+
+    fetch("http://localhost:3000/mostpopularpost", {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify(blogs),
+    }).then(() => {
+      console.log("New Blog Added");
+    });
   };
 
   return (
