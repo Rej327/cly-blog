@@ -12,7 +12,7 @@ const AddBlog = () => {
 
     const blogs = { head, date, content, img };
 
-    fetch("http://localhost:3000/mostpopularpost", {
+    fetch("http://localhost:3000/", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(blogs),
