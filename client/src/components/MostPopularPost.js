@@ -1,10 +1,11 @@
-import React from "react";
-import SlidePost from "./SlidePost";
+import React, { useEffect, useState } from "react";
+// import SlidePost from "./SlidePost";
 // import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import "aos/dist/aos.css";
-import Qoutes from "./Qoutes";
-import blogs from "../data/blogs.json";
+// import Qoutes from "./Qoutes";
+// import blogs from "../data/blogs.json";
 import Masonry from "react-masonry-css";
+import BlogDetails from "./BlogDetails";
 
 const MostPopularPost = () => {
   const breakpointColumnsObj = {
@@ -13,6 +14,21 @@ const MostPopularPost = () => {
     834: 2,
     414: 1,
   };
+
+  const [blogs, setBlogs] = useState(null);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      const response = await fetch("/api/blogs");
+      const json = await response.json();
+
+      if (response.ok) {
+        setBlogs(json);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
 
   return (
     <div className="max-w-[1024px] mx-auto h-full">
@@ -37,7 +53,10 @@ const MostPopularPost = () => {
             className="my-masonry-grid"
             columnClassName="my-masonry-grid_column"
           >
-            {blogs.map((blogs) => (
+            {blogs &&
+              blogs.map((blog) => <BlogDetails key={blog._id} blog={blog} />)}
+
+            {/* {blogs.map((blogs) => (
               <div
                 data-aos="fade-up"
                 data-aos-duration="2000"
@@ -75,7 +94,7 @@ const MostPopularPost = () => {
                   </button>
                 </div>
               </div>
-            ))}
+            ))} */}
           </Masonry>
           {/* </Masonry>
           </ResponsiveMasonry> */}
