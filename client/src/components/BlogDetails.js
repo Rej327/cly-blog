@@ -5,7 +5,7 @@ const BlogDetails = ({ blog }) => {
     <div>
       <h4>{blog.title}</h4>
       <p>{blog.createdAt}</p>
-      <p>{blog.file}</p>
+      <p>{blog.image}</p>
       <p>{blog.content}</p>
     </div>
     // <div
