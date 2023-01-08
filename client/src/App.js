@@ -3,7 +3,6 @@ import Home from "./pages/Home";
 import SingleBlog from "./pages/SingleBlog";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Test from "./Test";
 
 function App() {
   return (
