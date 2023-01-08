@@ -11,7 +11,7 @@ const blogSchema = new Schema(
       type: String,
       required: true,
     },
-    image: {
+    file: {
       type: String,
     },
   },
