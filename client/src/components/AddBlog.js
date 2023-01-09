@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import { useBlogsContext } from "../hooks/useWorkoutsContext";
 import { VscAdd } from "react-icons/vsc";
+import { PickerOverlay } from "filestack-react";
 
 // const AddBlog = () => {
 //   const [head, setHead] = useState("");
@@ -59,6 +60,8 @@ import { VscAdd } from "react-icons/vsc";
 const AddBlog = () => {
   // const { dispatch } = useBlogsContext();
 
+  const [isPicker, setIsPicker] = useState(false);
+
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [error, setError] = useState(null);
@@ -109,6 +112,27 @@ const AddBlog = () => {
         value={content}
         className={emptyFields.includes("content") ? "error" : ""}
       />
+
+      {/* add image */}
+      <button
+        type="button"
+        onClick={() => (isPicker ? setIsPicker(false) : setIsPicker(true))}
+      >
+        Add Image
+      </button>
+
+      {/* filestack */}
+      <div className="mt-4 relative">
+        {isPicker && (
+          <PickerOverlay
+            apikey={process.env.REACT_APP_FILESTACK_API_KEY}
+            onSuccess={(res) => console.log(res)}
+            onUploadDone={(res) => console.log(res)}
+          />
+        )}
+      </div>
+
+      {/* submit button */}
       <button>Add Blog</button>
       {error && <div className="error">{error}</div>}
     </form>
