@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import { useBlogsContext } from "../hooks/useWorkoutsContext";
 import { VscAdd } from "react-icons/vsc";
 import { PickerOverlay } from "filestack-react";
+import { client } from "filestack-react";
 
 // const AddBlog = () => {
 //   const [head, setHead] = useState("");
@@ -61,11 +62,10 @@ const AddBlog = () => {
   // const { dispatch } = useBlogsContext();
 
   const [isPicker, setIsPicker] = useState(false);
-
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [error, setError] = useState(null);
-  const [emptyFields, setEmpryFields] = useState([]);
+  const [emptyFields, setEmptyFields] = useState([]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -84,7 +84,7 @@ const AddBlog = () => {
 
     if (!response.ok) {
       setError(json.error);
-      setEmpryFields(json.emptyFields);
+      setEmptyFields(json.emptyFields);
     }
     if (response.ok) {
       setTitle("");
@@ -117,9 +117,14 @@ const AddBlog = () => {
       <button
         type="button"
         onClick={() => (isPicker ? setIsPicker(false) : setIsPicker(true))}
+        className="w-full text-lg font-bold border-dashed h-56 border-4 border-blue-800 text-blue-800"
       >
         Add Image
       </button>
+
+      {/* submit button */}
+      <button>Add Blog</button>
+      {error && <div className="error">{error}</div>}
 
       {/* filestack */}
       <div className="mt-4 relative">
@@ -131,10 +136,6 @@ const AddBlog = () => {
           />
         )}
       </div>
-
-      {/* submit button */}
-      <button>Add Blog</button>
-      {error && <div className="error">{error}</div>}
     </form>
   );
 };
