@@ -2,7 +2,6 @@ import React, { useState } from "react";
 // import { useBlogsContext } from "../hooks/useWorkoutsContext";
 import { VscAdd } from "react-icons/vsc";
 import { PickerOverlay } from "filestack-react";
-import { client } from "filestack-react";
 
 // const AddBlog = () => {
 //   const [head, setHead] = useState("");
