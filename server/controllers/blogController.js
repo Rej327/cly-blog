@@ -25,6 +25,16 @@ const getSingleBlog = async (req, res) => {
   res.status(200).json(blog);
 };
 
+//GET all image
+const getAllImage = async (req, res) => {
+  try {
+    const file = await Upload.find({}.sort({ _id: -1 }));
+    res.status(200).json(file);
+  } catch (error) {
+    res.status(404).json({ mssg: "Data Error" });
+  }
+};
+
 // create a new blog
 const createBlog = async (req, res) => {
   const { title, content, file } = req.body;
@@ -42,4 +52,5 @@ module.exports = {
   createBlog,
   getSingleBlog,
   getAllBlogs,
+  getAllImage,
 };
