@@ -11,7 +11,7 @@ const BlogDetails = ({ blog }) => {
       <p>
         {" "}
         <img
-          src={blog.image}
+          src={blog.file}
           alt="/"
           className="rounded-t-md hover:scale-105 duration-500"
         />

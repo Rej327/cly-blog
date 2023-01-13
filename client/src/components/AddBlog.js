@@ -64,13 +64,18 @@ const AddBlog = () => {
   const [image, setImage] = useState(false);
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const [file, setFile] = useState("");
   const [error, setError] = useState(null);
   const [emptyFields, setEmptyFields] = useState([]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const blogs = { title, content };
+    const blogs = {
+      title,
+      content,
+      file: image.filesUploaded[0].url,
+    };
 
     const response = await fetch("/api/blogs", {
       method: "POST",
@@ -89,6 +94,7 @@ const AddBlog = () => {
     if (response.ok) {
       setTitle("");
       setContent("");
+      setFile("");
       setError(null);
       console.log("new blog added", json);
       // dispatch({ type: "CREATE_WORKOUT", payload: json });
@@ -101,6 +107,8 @@ const AddBlog = () => {
         <img
           src={image && image.filesUploaded[0].url}
           alt="imageUploaded"
+          onChange={(e) => setFile(e.target.value)}
+          value={file}
           className="w-[400px] h-[400px] object-cover"
         />
       ) : (

@@ -7,7 +7,7 @@ const SingleBlog = () => {
   return (
     <div>
       <SingleBlogHeader />
-      <Blogs />
+      {/* <Blogs /> */}
       <AddBlog />
     </div>
   );

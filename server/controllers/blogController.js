@@ -37,16 +37,32 @@ const getAllImage = async (req, res) => {
 
 // create a new blog
 const createBlog = async (req, res) => {
-  const { title, content, file } = req.body;
-
-  // add blog to db
   try {
-    const blog = await Blog.create({ title, content, file });
-    res.status(200).json(blog);
+    const { title, content, file } = req.body;
+    const createImage = {
+      title,
+      content,
+      file,
+    };
+    if (createImage) {
+      const newImage = await Blog.create(createImage);
+      res.status(201).json(newImage);
+    }
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    res.status(404).json({ mssg: "Invalid Data" });
   }
 };
+// const createBlog = async (req, res) => {
+//   const { title, content, file } = req.body;
+
+//   // add blog to db
+//   try {
+//     const blog = await Blog.create({ title, content, file });
+//     res.status(200).json(blog);
+//   } catch (error) {
+//     res.status(400).json({ error: error.message });
+//   }
+// };
 
 module.exports = {
   createBlog,
