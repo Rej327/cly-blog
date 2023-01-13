@@ -44,10 +44,6 @@ const MostPopularPost = () => {
           <h1 className="text-4xl my-3 tracking-wide">Whats'hot</h1>
         </div>
         <div className="mx-auto w-full h-full gap-8 px-4">
-          {/* <ResponsiveMasonry
-            columnsCountBreakPoints={{ 320: 1, 768: 2, 900: 3 }}
-          >
-            <Masonry gutter="20px"> */}
           <Masonry
             breakpointCols={breakpointColumnsObj}
             className="my-masonry-grid"

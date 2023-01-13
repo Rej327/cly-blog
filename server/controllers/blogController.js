@@ -52,17 +52,6 @@ const createBlog = async (req, res) => {
     res.status(404).json({ mssg: "Invalid Data" });
   }
 };
-// const createBlog = async (req, res) => {
-//   const { title, content, file } = req.body;
-
-//   // add blog to db
-//   try {
-//     const blog = await Blog.create({ title, content, file });
-//     res.status(200).json(blog);
-//   } catch (error) {
-//     res.status(400).json({ error: error.message });
-//   }
-// };
 
 module.exports = {
   createBlog,
