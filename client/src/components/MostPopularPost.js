@@ -39,7 +39,7 @@ const MostPopularPost = () => {
           className="text-center w-[600px] h-28 mx-auto"
         >
           <p className="text-[10px] text-stone-400 font-bold tracking-widest">
-            MOST POPULAR POST
+            LATEST POST
           </p>
           <h1 className="text-4xl my-3 tracking-wide">Whats'hot</h1>
         </div>
