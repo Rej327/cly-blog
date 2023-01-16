@@ -38,9 +38,11 @@ const Navbar = () => {
               SINGLE BLOG
             </li>
           </Link>
-          <li className={navTextStyles.li} onClick={handleNav}>
-            ABOUT ME
-          </li>
+          <Link to="/about-me">
+            <li className={navTextStyles.li} onClick={handleNav}>
+              ABOUT ME
+            </li>
+          </Link>
           <li className={navTextStyles.li} onClick={handleNav}>
             CONTACT ME
           </li>
