@@ -33,11 +33,6 @@ const Navbar = () => {
               BLOG
             </li>
           </Link>
-          <Link to="/single-blog">
-            <li className={navTextStyles.li} onClick={handleNav}>
-              SINGLE BLOG
-            </li>
-          </Link>
           <Link to="/about-me">
             <li className={navTextStyles.li} onClick={handleNav}>
               ABOUT ME
