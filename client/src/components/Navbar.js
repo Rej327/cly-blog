@@ -38,9 +38,11 @@ const Navbar = () => {
               ABOUT ME
             </li>
           </Link>
-          <li className={navTextStyles.li} onClick={handleNav}>
-            CONTACT ME
-          </li>
+          <Link to="contact-me">
+            <li className={navTextStyles.li} onClick={handleNav}>
+              CONTACT ME
+            </li>
+          </Link>
         </ul>
         <div className="w-full h-full">
           <h1 className="font-tenor mt-9 text-center tracking-wider">
