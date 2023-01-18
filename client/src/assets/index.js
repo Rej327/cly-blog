@@ -8,3 +8,4 @@ export { default as slide2 } from "./slide2.jpg";
 export { default as slide3 } from "./slide3.jpg";
 export { default as profile } from "./profile.jpg";
 export { default as writting } from "./writting.jpg";
+export { default as contactheader } from "./contactheader.jpg";

@@ -1,12 +1,12 @@
 import React from "react";
+import ContactHeader from "../components/ContactHeader";
 import ContactMe from "../components/ContactMe";
-import Header from "../components/Header";
 import Profile from "../components/Profile";
 
 const Contact = () => {
   return (
     <div>
-      <Header />
+      <ContactHeader />
       <ContactMe />
       <Profile />
     </div>
