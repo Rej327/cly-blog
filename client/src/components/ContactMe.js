@@ -1,5 +1,10 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
+import { ImLocation } from "react-icons/im";
+import { BsFillTelephoneInboundFill } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
 
 const ContactMe = () => {
   const form = useRef();
@@ -31,12 +36,39 @@ const ContactMe = () => {
       <div className="max-w-[320px]">
         <h1 className="font-tenor text-2xl py-5 tracking-wider">My Address</h1>
         <p className="text-gray-600 pb-3 flex text-sm">
-          88 West 21th Street, Suite 721 New York NY 10016
+          <ImLocation className="text-4xl my-auto pr-2" />
+          Brgy. Madulao Catanuan, Quezon Philippines (4311)
         </p>
-        <p className="text-gray-600 pb-3 flex text-sm">+ 1235 2355 98</p>
-        <p className="text-gray-600 pb-3 flex text-sm">My Facebook</p>
-        <p className="text-gray-600 pb-3 flex text-sm">My twitter</p>
-        <p className="text-gray-600 pb-3 flex text-sm">My instagram</p>
+        <p className="text-gray-600 pb-3 flex text-sm">
+          <BsFillTelephoneInboundFill className="text-3xl my-auto pr-2" />
+          <a href="tel:09502433069">+63 950 243 3069</a>
+        </p>
+        <p className="text-gray-600 pb-3 flex text-sm">
+          <FaFacebookF className="text-2xl my-auto pr-2 ml-1" />
+          <a
+            href="https://www.facebook.com/carolyn.ollarte.98"
+            target="_blank"
+            rel="noreferrer"
+          >
+            My facebook{" "}
+          </a>
+        </p>
+        <p className="text-gray-600 pb-3 flex text-sm">
+          <FaTwitter className="text-3xl my-auto pr-2" />
+          <a href="https://twitter.com/clryyy" target="_blank" rel="noreferrer">
+            My twitter
+          </a>
+        </p>
+        <p className="text-gray-600 pb-3 flex text-sm">
+          <FaInstagramSquare className="text-3xl my-auto pr-2" />
+          <a
+            href="https://www.instagram.com/clyrxsm/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            My instagram
+          </a>
+        </p>
       </div>
       <div className="h-auto w-auto ml-5 ">
         <h1 className="font-tenor text-center text-2xl py-5 tracking-wider">
