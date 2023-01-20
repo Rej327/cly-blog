@@ -5,6 +5,7 @@ import { BsFillTelephoneInboundFill } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import { RiSendPlaneLine } from "react-icons/ri";
 
 const ContactMe = () => {
   const form = useRef();
@@ -110,11 +111,13 @@ const ContactMe = () => {
                 className="h-32 p-2 rounded-md w-full outline-[#E2B8AC]"
               />
             </div>
-            <input
+            <button
               type="submit"
-              value="Send"
-              className="bg-[#E2B8AC] hover:bg-[#e0bbb0] text-white mt-2 py-2 px-4 rounded-full hover:drop-shadow-md duration-500 w-full cursor-pointer"
-            />
+              className="flex justify-center bg-[#E2B8AC] hover:bg-[#e0bbb0] text-white mt-2 py-2 px-4 rounded-full hover:drop-shadow-md duration-500 w-full cursor-pointer"
+            >
+              Send
+              <RiSendPlaneLine className="my-auto ml-1" />
+            </button>
           </form>
         </div>
       </div>
