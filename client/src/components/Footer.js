@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div>
-      <h1>© 2022. ALL RIGHTS RESERVED</h1>
-      <div>
-        <ul>
-          <LINK to="/">
+    <div className="mt-12 w-full">
+      <h1 className="text-center">© 2023. ALL RIGHTS RESERVED</h1>
+      <div className="w-auto">
+        <ul className="flex justify-center gap-4 mt-4 pb-4">
+          <Link to="/">
             <li>Blog</li>
-          </LINK>
-          <LINK to="about-me">
+          </Link>
+          <Link to="about-me">
             <li>About Me</li>
-          </LINK>
-          <LINK to="contact-me">
+          </Link>
+          <Link to="contact-me">
             <li>Contact Me</li>
-          </LINK>
+          </Link>
         </ul>
       </div>
     </div>
