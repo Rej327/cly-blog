@@ -17,7 +17,9 @@ const AboutMe = () => {
           A small river named Duden flows by their place and supplies.
         </p>
       </div>
-      <SocialIcons />
+      <div className="mt-4">
+        <SocialIcons />
+      </div>
     </div>
   );
 };
