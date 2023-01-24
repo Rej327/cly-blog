@@ -5,9 +5,9 @@ export const styles = {
 
 export const toggleStyle = {
   NAVTOOGLE:
-    "z-[1000] fixed right-0 top-0 w-[25%] h-full border-r bg-white ease-in-out duration-500 p-4 hover:overflow-scrol scrollbar scrollbar-thumb-[#E2B8AC]scrollbar-track-gray-100",
+    "z-[1000] fixed right-0 top-0 w-[full] sm:w-[25%] h-full border-r bg-white ease-in-out duration-500 p-4 hover:overflow-scrol scrollbar scrollbar-thumb-[#E2B8AC]scrollbar-track-gray-100",
   NAVTOOGLEOUT:
-    "z-[10000] ease-in-out duration-500 fixed right-[-100%] bg-black text-white rounde-md",
+    "z-[1000] fixed ease-in-out p-4 right-0 top-0 sm:w-[25%] duration-500 h-full border-r bg-white fixed right-[-500px] bg-black text-white rounde-md",
 };
 
 export const navTextStyles = {
