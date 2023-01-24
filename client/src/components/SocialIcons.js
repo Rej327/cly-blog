@@ -3,7 +3,7 @@ import { SocialIcon } from "react-social-icons";
 
 const SocialIcons = () => {
   return (
-    <div className="flex justify-between p-4">
+    <div className="flex justify-between p-4 md:p-1">
       <SocialIcon
         url="https://www.facebook.com/carolyn.ollarte.98"
         target="_blank"
