@@ -27,12 +27,12 @@ const MostPopularPost = () => {
   }, []);
 
   return (
-    <div className="max-w-[1024px] mx-auto h-full">
+    <div className="mt-[600px] sm:my-auto max-w-[1024px] mx-auto h-full">
       <div className="w-auto h-full mx-auto my-24 ">
         <div
           data-aos="fade-up"
           data-aos-duration="2000"
-          className="text-center w-[600px] h-28 mx-auto"
+          className="text-center max-w-[600px] h-28 mx-auto"
         >
           <p className="text-[10px] text-stone-400 font-bold tracking-widest">
             LATEST POST
