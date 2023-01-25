@@ -37,8 +37,8 @@ const ContactMe = () => {
       <h1 className="font-tenor text-4xl py-5 tracking-wider w-full text-center">
         CONTACT ME
       </h1>
-      <div className="mt-16 flex justify-center">
-        <div className="max-w-[320px]">
+      <div className="mt-16 lg:flex justify-center">
+        <div className="lg:max-w-[320px] px-4">
           <h1 className="font-tenor text-2xl py-5 tracking-wider">
             My Address
           </h1>
@@ -81,25 +81,25 @@ const ContactMe = () => {
             </a>
           </p>
         </div>
-        <div className="h-auto w-auto ml-5 ">
+        <div className="h-auto w-auto mx-5 ">
           <h1 className="font-tenor text-center text-2xl py-5 tracking-wider">
             Get In Touch
           </h1>
           <form ref={form} onSubmit={sendEmail}>
-            <div className="flex gap-2 w-max ">
+            <div className="grid grid-cols-1 lg:flex gap-2 w-full border border-solid">
               <input
                 type="text"
                 name="name"
                 placeholder="Name"
                 required
-                className="h-11 w-[300px] p-2 rounded-md outline-[#E2B8AC]"
+                className="h-11 w-[100%] lg:w-[300px] p-2 rounded-md outline-[#E2B8AC]"
               />
               <input
                 type="text"
                 name="email"
                 placeholder="Email"
                 required
-                className="h-11 w-[300px] p-2 rounded-md outline-[#E2B8AC]"
+                className="h-11 w-[100%]  lg:w-[300px] p-2 rounded-md outline-[#E2B8AC]"
               />
             </div>
             <div className="h-auto w-full  mt-2">
