@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { VscAdd } from "react-icons/vsc";
 import { PickerOverlay } from "filestack-react";
 
 const AddBlog = () => {
