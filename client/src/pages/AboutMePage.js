@@ -1,6 +1,7 @@
 import React from "react";
 import AboutMeComp from "../components/AboutMeComp";
 import Header from "../components/Header";
+import Instagram from "../components/Instagram";
 import Profile from "../components/Profile";
 
 const AboutMePage = () => {
@@ -8,6 +9,7 @@ const AboutMePage = () => {
     <div>
       <Header />
       <AboutMeComp />
+      <Instagram />
       <Profile />
     </div>
   );

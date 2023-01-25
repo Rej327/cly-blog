@@ -1,6 +1,7 @@
 import React from "react";
 import ContactHeader from "../components/ContactHeader";
 import ContactMe from "../components/ContactMe";
+import Instagram from "../components/Instagram";
 import Profile from "../components/Profile";
 
 const Contact = () => {
@@ -8,6 +9,7 @@ const Contact = () => {
     <div>
       <ContactHeader />
       <ContactMe />
+      <Instagram />
       <Profile />
     </div>
   );
