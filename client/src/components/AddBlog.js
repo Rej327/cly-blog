@@ -46,7 +46,7 @@ const AddBlog = () => {
 
   return (
     <form
-      className="mx-auto w-[650px] grid border-dashed border-black-800 border-2 p-6 my-6"
+      className="mx-auto w-full lg:w-[650px] grid border-dashed border-black-800 border-2 p-6 my-6"
       onSubmit={handleSubmit}
     >
       <h3 className="py-4 text-2xl text-center">Add a New Blog</h3>
