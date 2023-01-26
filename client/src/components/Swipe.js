@@ -4,7 +4,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
-import { image1, image2, image3, image4, image5 } from "../assets";
+import {
+  Instagram1,
+  Instagram2,
+  Instagram3,
+  Instagram5,
+  Instagram7,
+} from "../assets";
 import { styles } from "../global-styles/globalstyles";
 
 export default function Swipe() {
@@ -36,57 +42,58 @@ export default function Swipe() {
         className="h-screen w-full sm:h-full"
       >
         <SwiperSlide>
-          <img src={image1} alt="/" className="object-cover h-full" />
+          <img src={Instagram1} alt="/" className="object-cover h-full" />
           <div className={styles.headerimage}>
             <div className="my-96 px-8">
               <p className="text-white text-2xl font-tenor py-2">
-                Write Website from Scratch
+                Before Second Semester Start
               </p>
-              <p className="py-2 text-gray-200">JULY 20, 2022 | WEB DESIGN</p>
+              <p className="py-2 text-gray-200">JANUARY 22, 2023</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image2} alt="/" className="object-cover h-full" />
+          <img src={Instagram2} alt="/" className="object-cover h-full" />
           <div className={styles.headerimage}>
             <div className="my-96 px-8">
               <p className="text-white text-2xl font-tenor py-2">
-                20 Modern Inspirational UI Examples
+                Batangas State University Main I
               </p>
-              <p className="py-2 text-gray-200">AUG 16, 2022 | WEB DESIGN</p>
+              <p className="py-2 text-gray-200">JANUARY 07, 2023</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image3} alt="/" className="object-cover h-full" />
+          <img src={Instagram3} alt="/" className="object-cover h-full" />
           <div className={styles.headerimage}>
             <div className="my-96 px-8">
               <p className="text-white text-2xl font-tenor py-2">
-                Support for Legacy Browsers
+                SZA•Normal Girl
               </p>
-              <p className="py-2 text-gray-200">SEPT 8, 2022 | WEB DESIGN</p>
+              <p className="py-2 text-gray-200">JANUARY 03, 2023</p>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src={Instagram5} alt="/" className="object-cover h-full" />
+          <div className={styles.headerimage}>
+            <div className="my-96 px-8">
+              <p className="text-white text-2xl font-tenor py-2">
+                Tuhian Beach Catanauan Quezon
+              </p>
+              <p className="py-2 text-gray-200">JULY 11, 2021</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image4} alt="/" className="object-cover h-full" />
+          <img src={Instagram7} alt="/" className="object-cover h-full" />
           <div className={styles.headerimage}>
             <div className="my-96 px-8">
               <p className="text-white text-2xl font-tenor py-2">
-                An Unobstructive 'Dashboardlink' Link
+                Notre Maison Lucena City
               </p>
-              <p className="py-2 text-gray-200">OCT 29, 2022 | WEB DESIGN</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={image5} alt="/" className="object-cover h-full" />
-          <div className={styles.headerimage}>
-            <div className="my-96 px-8">
-              <p className="text-white text-2xl font-tenor py-2">
-                Fixing Jagged Google Fonts in Chrome
-              </p>
-              <p className="py-2 text-gray-200">NOV 19, 2022 | WEB DESIGN</p>
+              <p className="py-2 text-gray-200">JUNE 14, 2021</p>
             </div>
           </div>
         </SwiperSlide>
