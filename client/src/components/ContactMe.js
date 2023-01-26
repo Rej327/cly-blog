@@ -86,7 +86,7 @@ const ContactMe = () => {
             Get In Touch
           </h1>
           <form ref={form} onSubmit={sendEmail}>
-            <div className="grid grid-cols-1 lg:flex gap-2 w-full border border-solid">
+            <div className="grid grid-cols-1 lg:flex gap-2 w-full">
               <input
                 type="text"
                 name="name"
