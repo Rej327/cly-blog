@@ -39,7 +39,6 @@ const AddBlog = () => {
       setContent("");
       setFile("");
       setError(null);
-      console.log("new blog added", json);
     }
   };
 

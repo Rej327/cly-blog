@@ -28,7 +28,7 @@ const Qoutes = () => {
         </h1>
         <div className="flex justify-between">
           <p className="text-[12px] text-stone-400 tracking-widest my-5">
-            -{qoutes.author ? qoutes.author : "Jefferson R."}
+            -{qoutes.author ? qoutes.author : "Carolyn O."}
           </p>
           <button onClick={handleClick}>
             <AiOutlineReload className="text-2xl text-teal-500" />
