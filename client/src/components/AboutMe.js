@@ -14,7 +14,8 @@ const AboutMe = () => {
           Carolyn Ollarte
         </h1>
         <p className="text-gray-600">
-          A small river named Duden flows by their place and supplies.
+          I encourage doing something with the desire to believe in God because
+          nothing great comes easy, and with God, everything is possible.
         </p>
       </div>
       <div className="mt-4">
