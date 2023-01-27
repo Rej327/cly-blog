@@ -12,37 +12,51 @@ const AboutMeComp = () => {
       </div>
       <div>
         <p className="text-stone-500 text-center px-4">
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia, there live the blind texts. Separated they
-          live in Bookmarksgrove right at the coast of the Semantics, a large
-          language ocean. A small river named Duden flows by their place and
-          supplies it with the necessary regelialia. It is a paradisematic
-          country, in which roasted parts of sentences fly into your mouth.
+          I believe that gorgeous girls don't gatekeep. So I wanted to share my
+          lifestyle, thoughts, and journey. Here you will get to know my life,
+          live with me and run in my mind virtually. I will help you discover
+          more of yourself and how you will love your living. Here is something
+          you probably want to check out!
+          <br />
+          <br />{" "}
+          <strong>
+            Keep in touch to know more about me and get inspired by my life.
+            Enjoy!
+          </strong>
         </p>
       </div>
       <div className="md:grid md:grid-cols-3 md:mt-28 p-4 ">
-        <div className="max-w-[250px] my-auto mx-auto">
+        <div className="max-w-[250px] mx-auto">
+          <h1 className="font-tenor py-4 text-2xl text-center md:text-left">
+            Profile
+          </h1>
           <img src={profile} alt="/" />
         </div>
         <div className="col-span-2">
-          <h1 className="font-tenor text-2xl pt-4">Carolyn Ollarte</h1>
           <p className="text-stone-500 py-4 px-4">
-            A small river named Duden flows by their place and supplies it with
-            the necessary regelialia. Far far away, behind the word mountains,
-            far from the countries Vokalia and Consonantia, there live the blind
-            texts. Separated they live in Bookmarksgrove right at the coast of
-            the Semantics, a large language ocean. A small river named Duden
-            flows by their place and supplies it with the necessary regelialia.
-            It is a paradisematic country, in which roasted parts of sentences
-            fly into your mouth.
+            Hi! This is <strong>Carolyn Ollarte</strong>
+            <br />
+            Currently, I am 20 years old. I was named Carolyn Ollarte and was
+            raised in the country of Philippines, Quezon Province, in the
+            municipality of Catanauan. I encourage doing something with the
+            desire to believe in God because nothing great comes easy, and with
+            God, everything is possible.
+            <br />
+            <br />
+            Growing up, I programmed my mind that my purpose in life would
+            become someday, I can be an inspiration to anybody else when I
+            finally reached my dreams. However, I thought that our “journey” has
+            a great contribution to become an inspiration. So this blog, would
+            serve as my memories bank that someday I could tell to somebody
+            else.
           </p>
           <ul className="text-stone-400 list-disc pl-10">
-            <li>Far far away, behind the word mountains</li>
-            <li>A small river named Duden flows by their place and supplies</li>
-            <li>
-              It is a paradisematic country, in which roasted parts of sentences
-              fly into your mouth.
-            </li>
+            <h6>Here you'll read:</h6>
+            <li>My lifestyle</li>
+            <li>My life as a Tourism Student </li>
+            <li>My random thoughts</li>
+            <li>My memories </li>
+            <li>My journey</li>
           </ul>
         </div>
       </div>
