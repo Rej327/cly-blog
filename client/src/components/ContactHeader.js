@@ -10,7 +10,7 @@ const ContactHeader = () => {
             My Voyage of Discovery
           </h1>
         </div>
-        <div className="md:w-[70%]">
+        <div className="md:w-[70%] hover:contrast-75  duration-300 cursor-pointer ">
           <img
             src={contactheader}
             alt="/"
