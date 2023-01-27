@@ -48,13 +48,17 @@ const AddBlog = () => {
       className="mx-auto w-full lg:w-[650px] grid border-dashed border-black-800 border-2 p-6 my-6"
       onSubmit={handleSubmit}
     >
-      <h3 className="py-4 text-2xl text-center">Add a New Blog</h3>
+      <h1 className="py-4 text-2xl text-center">Add a New Blog</h1>
       <label className="py-2 text-xl">Blog Title </label>
       <input
         type="text"
         onChange={(e) => setTitle(e.target.value)}
         value={title}
-        className={emptyFields.includes("title") ? "error" : "rounded h-10 p-2"}
+        className={
+          emptyFields.includes("title")
+            ? "error"
+            : "rounded h-10 p-2 outline-[#E2B8AC]"
+        }
       />
       <label className="py-2 text-xl">Content </label>
       <textarea
@@ -62,7 +66,9 @@ const AddBlog = () => {
         onChange={(e) => setContent(e.target.value)}
         value={content}
         className={
-          emptyFields.includes("content") ? "error" : "rounded h-[150px] p-2"
+          emptyFields.includes("content")
+            ? "error"
+            : "rounded h-[150px] p-2 outline-[#E2B8AC]"
         }
       />
 
@@ -105,7 +111,7 @@ const AddBlog = () => {
               maxFiles: 1,
               accept: ["image/*"],
               errorsTimeout: 2000,
-              maxSize: 1 * 900 * 1000,
+              maxSize: 20 * 2048 * 2048,
             }}
           />
         )}
