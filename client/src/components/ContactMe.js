@@ -44,11 +44,11 @@ const ContactMe = () => {
           </h1>
           <p className="text-gray-600 pb-3 flex text-sm">
             <ImLocation className="text-4xl my-auto pr-2" />
-            Brgy. Madulao Catanuan, Quezon Philippines (4311)
+            Brgy. Poblacion 09 Catanuan, Quezon Philippines (4311)
           </p>
           <p className="text-gray-600 pb-3 flex text-sm">
             <BsFillTelephoneInboundFill className="text-3xl my-auto pr-2" />
-            <a href="tel:09502433069">+63 950 243 3069</a>
+            <a href="tel:09079681450">+63-907-968-1450</a>
           </p>
           <p className="text-gray-600 pb-3 flex text-sm">
             <FaFacebookF className="text-2xl my-auto pr-2 ml-1" />
