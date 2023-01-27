@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "aos/dist/aos.css";
 import Masonry from "react-masonry-css";
 import BlogDetails from "./BlogDetails";
+import Qoutes from "./Qoutes";
 
 const MostPopularPost = () => {
   const breakpointColumnsObj = {
@@ -45,6 +46,7 @@ const MostPopularPost = () => {
             className="my-masonry-grid"
             columnClassName="my-masonry-grid_column"
           >
+            <Qoutes />
             {blogs &&
               blogs.map((blog) => <BlogDetails key={blog._id} blog={blog} />)}
           </Masonry>
