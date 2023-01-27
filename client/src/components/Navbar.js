@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between absolute items-center h-24 z-[999] w-full mx-auto px-5 text-black">
       <h2 className="text-2xl sm:text-3xl tracking-widest text-white">
-        CLY AGENCY.
+        CLY BLOG.
       </h2>
       <div onClick={handleNav} className="block cursor-pointer text-white">
         {nav ? <AiOutlineMenu size={30} /> : <AiOutlineMenu size={30} />}
@@ -54,10 +54,14 @@ const Navbar = () => {
               Carolyn Ollarte
             </h1>
             <p className="text-gray-600 text-center">
-              A small river named Duden flows by their place and supplies.
+              I encourage doing something with the desire to believe in God
+              because nothing great comes easy, and with God, everything is
+              possible.
             </p>
           </div>
-          <SocialIcons />
+          <div className="my-4">
+            <SocialIcons />
+          </div>
         </div>
       </div>
     </div>

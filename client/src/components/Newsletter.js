@@ -6,8 +6,7 @@ const Newsletter = () => {
       <div>
         <h1 className="font-tenor text-xl py-5 tracking-wider">NEWSLETTER</h1>
         <p className="text-gray-600">
-          A small river named Duden flows by their place and supplies it with
-          the necessary regelialia
+          Subscribe my newsletter to stay updated every moment.
         </p>
       </div>
       <div>

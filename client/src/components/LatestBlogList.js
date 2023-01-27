@@ -3,8 +3,7 @@ import formatDistanceToNow from "date-fns/formatDistanceToNow";
 
 const LatestBlogList = ({ blog }) => {
   return (
-    <div className="w-full overflow-scroll">
-      <h1 className="font-tenor text-xl py-5 tracking-wider">Latest Blog</h1>
+    <div className="py-1">
       <div className="flex">
         <img src={blog.file} alt="/" className="w-[100px]" />
 

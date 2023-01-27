@@ -18,9 +18,12 @@ const LatestBlog = () => {
   }, []);
 
   return (
-    <div className="w-full">
-      {blogs &&
-        blogs.map((blog) => <LatestBlogList key={blog._id} blog={blog} />)}
+    <div className="mx-auto">
+      <h1 className="font-tenor text-xl tracking-wider py-5">LATEST BLOG</h1>
+      <div className="w-full overflow-scroll max-h-[520px]">
+        {blogs &&
+          blogs.map((blog) => <LatestBlogList key={blog._id} blog={blog} />)}
+      </div>
     </div>
   );
 };
