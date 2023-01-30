@@ -23,7 +23,7 @@ mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
     // listen for request
-    app.listen(process.env.PORT, () => {
+    app.listen(process.env.PORT || "https://cly-blog.onrender.com/", () => {
       console.log("connected to db and listening on port", process.env.PORT);
     });
   })
