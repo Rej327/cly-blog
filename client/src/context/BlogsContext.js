@@ -4,11 +4,11 @@ export const BlogsContext = createContext();
 
 export const blogsReducer = (state, action) => {
   switch (action.type) {
-    case "SET_WORKOUTS":
+    case "SET_BLOGS":
       return {
         blogs: action.payload,
       };
-    case "CREATE_WORKOUT":
+    case "CREATE_BLOG":
       return {
         blogs: [action.payload, ...state.blogs],
       };
