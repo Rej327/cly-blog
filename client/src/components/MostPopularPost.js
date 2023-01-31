@@ -20,6 +20,7 @@ const MostPopularPost = () => {
         "https://cly-blog-db.onrender.com/api/blogs"
       );
       const json = await response.json();
+      console.log(json);
 
       if (response.ok) {
         setBlogs(json);
