@@ -49,6 +49,7 @@ const AddBlog = () => {
       }
       setKeyPass("");
       setImage(false);
+      alert("Blog Succesfully added!:)");
     } else {
       alert("Password is Incorrect");
     }
