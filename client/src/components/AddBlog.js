@@ -20,7 +20,7 @@ const AddBlog = () => {
       file: image.filesUploaded[0].url,
     };
 
-    const response = await fetch("api/blogs", {
+    const response = await fetch("https://cly-blog-db.onrender.com/api/blogs", {
       method: "POST",
       body: JSON.stringify(blogs),
       headers: {

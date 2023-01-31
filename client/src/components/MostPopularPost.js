@@ -16,7 +16,9 @@ const MostPopularPost = () => {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const response = await fetch("api/blogs");
+      const response = await fetch(
+        "https://cly-blog-db.onrender.com/api/blogs"
+      );
       const json = await response.json();
 
       if (response.ok) {
