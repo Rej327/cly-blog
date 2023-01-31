@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/cly-add-blog" element={<SingleBlog />} />
+          <Route path="/add-blog" element={<SingleBlog />} />
           <Route path="/about-me" element={<AboutMePage />} />
           <Route path="/contact-me" element={<Contact />} />
         </Routes>

@@ -9,37 +9,50 @@ const AddBlog = () => {
   const [file, setFile] = useState("");
   const [error, setError] = useState(null);
   const [emptyFields, setEmptyFields] = useState([]);
+  const [keyPass, setKeyPass] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const blogs = {
-      title,
-      content,
-      //pass url from filestack to mongodb
-      file: image.filesUploaded[0].url,
-    };
+    const hiddenKey = "clyaddblog";
 
-    const response = await fetch("https://cly-blog-db.onrender.com/api/blogs", {
-      method: "POST",
-      body: JSON.stringify(blogs),
-      headers: {
-        "Content-Type": "application/json  ",
-      },
-    });
+    if (hiddenKey === keyPass) {
+      const blogs = {
+        title,
+        content,
+        //pass url from filestack to mongodb
+        file: image.filesUploaded[0].url,
+      };
 
-    const json = await response.json();
+      const response = await fetch(
+        "https://cly-blog-db.onrender.com/api/blogs",
+        {
+          method: "POST",
+          body: JSON.stringify(blogs),
+          headers: {
+            "Content-Type": "application/json  ",
+          },
+        }
+      );
 
-    if (!response.ok) {
-      setError(json.error);
-      setEmptyFields(json.emptyFields);
+      const json = await response.json();
+
+      if (!response.ok) {
+        setError(json.error);
+        setEmptyFields(json.emptyFields);
+      }
+      if (response.ok) {
+        setTitle("");
+        setContent("");
+        setFile("");
+        setError(null);
+      }
+      setKeyPass("");
+      setImage(false);
+    } else {
+      alert("Password is Incorrect");
     }
-    if (response.ok) {
-      setTitle("");
-      setContent("");
-      setFile("");
-      setError(null);
-    }
+    console.log(file);
   };
 
   return (
@@ -89,6 +102,19 @@ const AddBlog = () => {
           Add Image
         </button>
       )}
+
+      {/* Key Pass */}
+      <label className="py-2 text-xl">Password </label>
+      <input
+        type="password"
+        onChange={(e) => setKeyPass(e.target.value)}
+        value={keyPass}
+        className={
+          emptyFields.includes("keyPass")
+            ? "error"
+            : "rounded h-10 p-2 outline-[#E2B8AC]"
+        }
+      />
 
       {/* submit button */}
       <button className="bg-[#E2B8AC] hover:bg-[#e0bbb0] text-white  my-5 py-2 px-4 rounded-full hover:drop-shadow-md duration-500 hover:scale-105">

@@ -38,9 +38,14 @@ const Navbar = () => {
               ABOUT ME
             </li>
           </Link>
-          <Link to="contact-me">
+          <Link to="/contact-me">
             <li className={navTextStyles.li} onClick={handleNav}>
               CONTACT ME
+            </li>
+          </Link>
+          <Link to="/add-blog">
+            <li className={navTextStyles.li} onClick={handleNav}>
+              ADD BLOG
             </li>
           </Link>
         </ul>
